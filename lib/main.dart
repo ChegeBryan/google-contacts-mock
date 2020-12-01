@@ -28,20 +28,15 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: FloatingSearchBar.builder(
+      home: FloatingSearchBar(
+        children: [],
         pinned: true,
-        itemCount: 100,
         padding: EdgeInsets.only(top: 10.0),
-        itemBuilder: (BuildContext context, int index) {
-          return ListTile(
-            leading: Text(index.toString()),
-          );
-        },
         drawer: Drawer(
           child: Container(),
         ),
         trailing: CircleAvatar(
-          child: Text("RD"),
+          child: Text("CB"),
         ),
         onChanged: (String value) {},
         onTap: () {},
