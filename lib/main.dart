@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:floating_search_bar/floating_search_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,27 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: FloatingSearchBar.builder(
+        pinned: true,
+        itemCount: 100,
+        padding: EdgeInsets.only(top: 10.0),
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile(
+            leading: Text(index.toString()),
+          );
+        },
+        drawer: Drawer(
+          child: Container(),
+        ),
+        trailing: CircleAvatar(
+          child: Text("RD"),
+        ),
+        onChanged: (String value) {},
+        onTap: () {},
+        decoration: InputDecoration.collapsed(
+          hintText: "Search...",
+        ),
+      ),
     );
   }
 }
