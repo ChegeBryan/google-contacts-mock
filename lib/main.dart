@@ -28,8 +28,16 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: FloatingSearchBar(
-        children: [],
+      home: FloatingSearchBar.builder(
+        itemBuilder: (BuildContext context, _) {
+          return ListTile(
+            leading: CircleAvatar(
+              child: Text("AB"),
+            ),
+            title: Text("Contact Name"),
+            onTap: () {},
+          );
+        },
         pinned: true,
         padding: EdgeInsets.only(top: 10.0),
         drawer: Drawer(
