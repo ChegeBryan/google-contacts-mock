@@ -29,6 +29,9 @@ class MyApp extends StatelessWidget {
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
+
+        // add roboto as default font family
+        fontFamily: 'Raleway',
       ),
       home: FloatingSearchBar.builder(
         itemBuilder: (BuildContext context, _) {
@@ -39,7 +42,9 @@ class MyApp extends StatelessWidget {
                   Colors.primaries[Random().nextInt(Colors.primaries.length)],
               child: Text(
                 "AB",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
             title: Text("Contact Name"),
