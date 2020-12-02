@@ -7,6 +7,12 @@ class Contact extends StatelessWidget {
       appBar: AppBar(
         title: Text('Contact'),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.edit_outlined,
+        ),
+      ),
     );
   }
 }
