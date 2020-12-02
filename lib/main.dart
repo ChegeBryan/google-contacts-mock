@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:floating_search_bar/floating_search_bar.dart';
+import 'package:google_contacts/contact.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,7 +49,12 @@ class MyApp extends StatelessWidget {
               ),
             ),
             title: Text("Contact Name"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Contact()),
+              );
+            },
           );
         },
         pinned: true,
