@@ -47,6 +47,13 @@ class ContactDetails extends StatelessWidget {
             ),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.only(left: 20.0, bottom: 20.0),
+          child: Text(
+            'Contact Name',
+            style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.w500),
+          ),
+        ),
       ],
     );
   }
