@@ -70,6 +70,7 @@ class ContactDetails extends StatelessWidget {
         ),
         Divider(),
         buttonSection,
+        Divider(),
       ],
     );
   }
