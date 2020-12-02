@@ -23,6 +23,20 @@ class Contact extends StatelessWidget {
 class ContactDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Color color = Theme.of(context).primaryColor;
+
+    Widget buttonSection = Container(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          _buildButtonColumn(color, Icons.call_outlined, "Call"),
+          _buildButtonColumn(color, Icons.message_outlined, "Text"),
+          _buildButtonColumn(color, Icons.videocam_outlined, "Video"),
+        ],
+      ),
+    );
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -55,13 +69,7 @@ class ContactDetails extends StatelessWidget {
           ),
         ),
         Divider(),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            _buildButtonColumn(
-                Theme.of(context).primaryColor, Icons.call_outlined, "Call")
-          ],
-        )
+        buttonSection,
       ],
     );
   }
