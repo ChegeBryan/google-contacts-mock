@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:floating_search_bar/floating_search_bar.dart';
 
@@ -32,6 +34,9 @@ class MyApp extends StatelessWidget {
         itemBuilder: (BuildContext context, _) {
           return ListTile(
             leading: CircleAvatar(
+              // use random colors from the primary colors
+              backgroundColor:
+                  Colors.primaries[Random().nextInt(Colors.primaries.length)],
               child: Text("AB"),
             ),
             title: Text("Contact Name"),
