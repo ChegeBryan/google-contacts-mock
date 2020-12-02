@@ -55,6 +55,14 @@ class ContactDetails extends StatelessWidget {
           ),
         ),
         Divider(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(children: [
+              Icon(Icons.call_outlined),
+            ]),
+          ],
+        )
       ],
     );
   }
