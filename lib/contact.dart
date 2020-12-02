@@ -54,6 +54,7 @@ class ContactDetails extends StatelessWidget {
             style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.w500),
           ),
         ),
+        Divider(),
       ],
     );
   }
