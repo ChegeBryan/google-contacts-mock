@@ -37,7 +37,10 @@ class MyApp extends StatelessWidget {
               // use random colors from the primary colors
               backgroundColor:
                   Colors.primaries[Random().nextInt(Colors.primaries.length)],
-              child: Text("AB"),
+              child: Text(
+                "AB",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
             title: Text("Contact Name"),
             onTap: () {},
