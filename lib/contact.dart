@@ -58,9 +58,20 @@ class ContactDetails extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Column(children: [
-              Icon(Icons.call_outlined),
-            ]),
+            Column(
+              children: [
+                Icon(
+                  Icons.call_outlined,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Text(
+                    'Call',
+                    style: TextStyle(fontWeight: FontWeight.w700),
+                  ),
+                ),
+              ],
+            ),
           ],
         )
       ],
