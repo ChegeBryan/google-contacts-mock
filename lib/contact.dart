@@ -144,6 +144,35 @@ class ContactDetails extends StatelessWidget {
               title: Text('Message call +254000000'),
             ),
             Divider(),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0, bottom: 20.0),
+              child: Text('Labels'),
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Icon(
+                    Icons.label_outline,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: InputChip(
+                    label: Text('Family'),
+                    backgroundColor: Colors.transparent,
+                    shape: StadiumBorder(
+                      side: BorderSide(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
+            Divider(),
           ],
         ),
       ],
