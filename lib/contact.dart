@@ -111,6 +111,14 @@ class ContactDetails extends StatelessWidget {
         Divider(
           indent: 56.0,
         ),
+        ListTile(
+          leading: Icon(
+            Icons.email_outlined,
+            color: Colors.grey,
+          ),
+          title: Text('email@test.com'),
+          subtitle: Text('Home · Default'),
+        ),
       ],
     );
   }
