@@ -173,6 +173,24 @@ class ContactDetails extends StatelessWidget {
               ],
             ),
             Divider(),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Text('About Contact Name'),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.calendar_today_outlined,
+                color: Colors.grey[700],
+              ),
+              title: Text("December 2, 2020"),
+              subtitle: Text("Anniversary"),
+            ),
+            ListTile(
+              leading: SizedBox(),
+              title: Text("December 3, 2010"),
+              subtitle: Text("Birthday"),
+            ),
+            Divider(),
           ],
         ),
       ],
