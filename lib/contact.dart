@@ -8,6 +8,22 @@ class Contact extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Contact'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.star_border_outlined),
+            onPressed: () {},
+          ),
+          PopupMenuButton(
+            itemBuilder: (BuildContext context) => [
+              PopupMenuItem(
+                child: Text('Test'),
+              ),
+              PopupMenuItem(
+                child: Text('Test 2'),
+              ),
+            ],
+          )
+        ],
       ),
       body: ContactDetails(),
       floatingActionButton: FloatingActionButton(
