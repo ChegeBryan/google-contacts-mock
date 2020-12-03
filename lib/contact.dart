@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import 'presentation/custom_icons_icon.dart';
+
 class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -119,6 +121,27 @@ class ContactDetails extends StatelessWidget {
           title: Text('email@test.com'),
           subtitle: Text('Home · Default'),
         ),
+        Divider(
+          indent: 56.0,
+        ),
+        ListTile(
+          leading: Icon(
+            CustomIcons.whatsapp,
+            color: Colors.green,
+          ),
+          title: Text('Video call +254000000'),
+        ),
+        Divider(
+          indent: 56.0,
+        ),
+        ListTile(
+          leading: Icon(
+            CustomIcons.whatsapp,
+            color: Colors.green,
+          ),
+          title: Text('Message call +254000000'),
+        ),
+        Divider(),
       ],
     );
   }
