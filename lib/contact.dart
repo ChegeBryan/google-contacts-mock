@@ -87,6 +87,27 @@ class ContactDetails extends StatelessWidget {
         Divider(),
         buttonSection,
         Divider(),
+        ListTile(
+          leading: Icon(
+            Icons.call_outlined,
+            color: color,
+          ),
+          title: Text('+25400000000'),
+          subtitle: Text('Mobile'),
+          trailing: Wrap(
+            spacing: 24,
+            children: [
+              Icon(
+                Icons.videocam_outlined,
+                color: color,
+              ),
+              Icon(
+                Icons.message_outlined,
+                color: color,
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
