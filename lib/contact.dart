@@ -108,6 +108,9 @@ class ContactDetails extends StatelessWidget {
             ],
           ),
         ),
+        Divider(
+          indent: 56.0,
+        ),
       ],
     );
   }
