@@ -26,6 +26,10 @@ class Contact extends StatelessWidget {
             ],
           )
         ],
+        iconTheme: IconThemeData(
+          color: Colors.grey[700],
+        ),
+        backgroundColor: Colors.grey[50],
       ),
       body: ContactDetails(),
       floatingActionButton: FloatingActionButton(
