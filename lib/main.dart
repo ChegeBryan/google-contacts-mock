@@ -60,7 +60,29 @@ class MyApp extends StatelessWidget {
         pinned: true,
         padding: EdgeInsets.only(top: 10.0),
         drawer: Drawer(
-          child: Container(),
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              Container(
+                height: 110.0,
+                child: DrawerHeader(
+                  child: Wrap(
+                    spacing: 8.0,
+                    children: [
+                      Icon(Icons.person),
+                      Text(
+                        'Contacts Mock',
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 24,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         trailing: CircleAvatar(
           child: Text("CB"),
