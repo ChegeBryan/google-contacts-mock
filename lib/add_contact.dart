@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ui/add_contact_form.dart';
 
 class AddContact extends StatelessWidget {
   @override
@@ -46,6 +47,7 @@ class _AddContactFormState extends State<AddContactForm> {
     return ListView(
       children: [
         TopContainer(),
+        AddContactFormFields(),
       ],
     );
   }
