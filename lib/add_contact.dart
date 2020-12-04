@@ -17,6 +17,10 @@ class AddContact extends StatelessWidget {
         ),
         backgroundColor: Colors.grey[50],
         actions: [
+          TextButton(
+            onPressed: () {},
+            child: Text("save"),
+          ),
           PopupMenuButton(
             itemBuilder: (BuildContext context) => [
               PopupMenuItem(
