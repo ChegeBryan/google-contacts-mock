@@ -66,7 +66,7 @@ flutter:
         - asset: fonts/Raleway-Light.ttf
         - asset: fonts/Raleway-Medium.ttf
           style: normal
-    - family: Whatsapp
+    - family: Customicon
       fonts:
         - asset: fonts/Whatsapp.ttf
 
