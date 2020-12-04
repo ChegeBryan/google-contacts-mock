@@ -30,6 +30,19 @@ class AddContact extends StatelessWidget {
           )
         ],
       ),
+      body: AddContactForm(),
     );
+  }
+}
+
+class AddContactForm extends StatefulWidget {
+  @override
+  _AddContactFormState createState() => _AddContactFormState();
+}
+
+class _AddContactFormState extends State<AddContactForm> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
