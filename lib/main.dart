@@ -94,7 +94,7 @@ class MyApp extends StatelessWidget {
                 onTap: () {},
               ),
               ListTile(
-                leading: Icon(CustomIcons.magic),
+                leading: Icon(Icons.sync),
                 title: Text("Merge & fix"),
                 onTap: () {},
               ),
