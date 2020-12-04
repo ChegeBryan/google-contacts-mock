@@ -66,15 +66,20 @@ class MyApp extends StatelessWidget {
               Container(
                 height: 110.0,
                 child: DrawerHeader(
-                  child: Wrap(
-                    spacing: 8.0,
+                  child: Row(
                     children: [
-                      Icon(Icons.person),
-                      Text(
-                        'Contacts Mock',
-                        style: TextStyle(
-                          color: Colors.grey[700],
-                          fontSize: 24,
+                      CircleAvatar(
+                        maxRadius: 16.0,
+                        child: Icon(Icons.person),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: Text(
+                          'Contacts Mock',
+                          style: TextStyle(
+                            color: Colors.grey[700],
+                            fontSize: 24,
+                          ),
                         ),
                       ),
                     ],
