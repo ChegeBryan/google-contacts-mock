@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:floating_search_bar/floating_search_bar.dart';
 import 'package:google_contacts/contact.dart';
+import 'package:google_contacts/presentation/custom_icons_icon.dart';
 
 void main() {
   runApp(MyApp());
@@ -85,6 +86,17 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+              ListTile(
+                leading: Icon(Icons.person_outline),
+                title: Text("Contacts"),
+                trailing: Text("333"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(CustomIcons.magic),
+                title: Text("Merge & fix"),
+                onTap: () {},
               ),
             ],
           ),
