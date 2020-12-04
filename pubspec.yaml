@@ -69,6 +69,7 @@ flutter:
     - family: Customicon
       fonts:
         - asset: fonts/Whatsapp.ttf
+        - asset: fonts/Magic.ttf
 
   #   - family: Trajan Pro
   #     fonts:
