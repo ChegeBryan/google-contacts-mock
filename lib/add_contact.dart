@@ -43,6 +43,29 @@ class AddContactForm extends StatefulWidget {
 class _AddContactFormState extends State<AddContactForm> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView(
+      children: [
+        Container(
+          child: Row(
+            children: [
+              Text("Save to"),
+              Row(
+                children: [
+                  CircleAvatar(
+                    maxRadius: 12.0,
+                    child: Text("A"),
+                  ),
+                  Text("text@email.com"),
+                  Icon(
+                    Icons.keyboard_arrow_down,
+                    color: Colors.grey[700],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
   }
 }
