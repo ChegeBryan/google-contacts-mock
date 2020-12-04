@@ -64,19 +64,32 @@ class ContactSaveToContainer extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 12.0),
       child: Row(
         children: [
-          Text("Save to"),
-          Row(
-            children: [
-              CircleAvatar(
-                maxRadius: 12.0,
-                child: Text("A"),
-              ),
-              Text("text@email.com"),
-              Icon(
-                Icons.keyboard_arrow_down,
-                color: Colors.grey[700],
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Text("Save to"),
+          ),
+          Container(
+            decoration: ShapeDecoration(
+              shape: StadiumBorder(),
+              color: Colors.white,
+            ),
+            padding: EdgeInsets.all(4.0),
+            child: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: CircleAvatar(
+                    maxRadius: 12.0,
+                    child: Text("A"),
+                  ),
+                ),
+                Text("text@email.com"),
+                Icon(
+                  Icons.keyboard_arrow_down,
+                  color: Colors.grey[700],
+                ),
+              ],
+            ),
           ),
         ],
       ),
