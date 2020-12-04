@@ -45,14 +45,14 @@ class _AddContactFormState extends State<AddContactForm> {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        ContactSaveToContainer(),
+        TopContainer(),
       ],
     );
   }
 }
 
-class ContactSaveToContainer extends StatelessWidget {
-  const ContactSaveToContainer({
+class TopContainer extends StatelessWidget {
+  const TopContainer({
     Key key,
   }) : super(key: key);
 
