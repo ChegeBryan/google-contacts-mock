@@ -16,6 +16,15 @@ class AddContact extends StatelessWidget {
           color: Colors.grey[700],
         ),
         backgroundColor: Colors.grey[50],
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (BuildContext context) => [
+              PopupMenuItem(
+                child: Text("Help & feedback"),
+              ),
+            ],
+          )
+        ],
       ),
     );
   }
