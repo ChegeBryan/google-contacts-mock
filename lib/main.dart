@@ -108,6 +108,22 @@ class MyApp extends StatelessWidget {
                 title: Text("Family"),
                 onTap: () {},
               ),
+              ListTile(
+                leading: Icon(Icons.add),
+                title: Text("Create Label"),
+                onTap: () {},
+              ),
+              Divider(),
+              ListTile(
+                leading: Icon(Icons.settings_outlined),
+                title: Text("Settings"),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.help_outline),
+                title: Text("Help and Support"),
+                onTap: () {},
+              ),
             ],
           ),
         ),
