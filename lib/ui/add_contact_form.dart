@@ -25,6 +25,15 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             ),
             trailing: Icon(Icons.keyboard_arrow_down),
           ),
+          Padding(
+            padding: EdgeInsets.only(left: 56.0, right: 56.0, top: 8.0),
+            child: TextFormField(
+              decoration: InputDecoration(
+                labelText: "Last name",
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ),
         ],
       ),
     );
