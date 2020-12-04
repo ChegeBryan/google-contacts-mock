@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:floating_search_bar/floating_search_bar.dart';
+import 'package:google_contacts/add_contact.dart';
 import 'package:google_contacts/contact.dart';
 
 void main() {
@@ -149,7 +150,12 @@ class Home extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AddContact()),
+          );
+        },
         child: Icon(Icons.add),
       ),
     );
