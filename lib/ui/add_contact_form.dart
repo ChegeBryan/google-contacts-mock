@@ -16,10 +16,11 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
       child: Column(
         children: <Widget>[
           ListTile(
-            leading: Icon(Icons.person_outline),
             title: TextFormField(
               decoration: InputDecoration(
+                icon: Icon(Icons.person_outline),
                 labelText: "First name",
+                border: OutlineInputBorder(),
               ),
             ),
             trailing: Icon(Icons.keyboard_arrow_down),
