@@ -66,12 +66,9 @@ flutter:
         - asset: fonts/Raleway-Light.ttf
         - asset: fonts/Raleway-Medium.ttf
           style: normal
-    - family: Whatsapp
+    - family: MyFlutterApp
       fonts:
-        - asset: fonts/Whatsapp.ttf
-    - family: Magic
-      fonts:
-        - asset: fonts/Magic.ttf
+        - asset: fonts/MyFlutterApp.ttf
 
   #   - family: Trajan Pro
   #     fonts:
