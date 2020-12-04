@@ -45,27 +45,38 @@ class _AddContactFormState extends State<AddContactForm> {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Container(
-          child: Row(
+        ContactSaveToContainer(),
+      ],
+    );
+  }
+}
+
+class ContactSaveToContainer extends StatelessWidget {
+  const ContactSaveToContainer({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [
+          Text("Save to"),
+          Row(
             children: [
-              Text("Save to"),
-              Row(
-                children: [
-                  CircleAvatar(
-                    maxRadius: 12.0,
-                    child: Text("A"),
-                  ),
-                  Text("text@email.com"),
-                  Icon(
-                    Icons.keyboard_arrow_down,
-                    color: Colors.grey[700],
-                  ),
-                ],
+              CircleAvatar(
+                maxRadius: 12.0,
+                child: Text("A"),
+              ),
+              Text("text@email.com"),
+              Icon(
+                Icons.keyboard_arrow_down,
+                color: Colors.grey[700],
               ),
             ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
