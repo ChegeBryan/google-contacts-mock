@@ -12,9 +12,20 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
   @override
   Widget build(BuildContext context) {
     return Form(
-        key: _formKey,
-        child: Column(children: <Widget>[
-          // Add TextFormFields and ElevatedButton here.
-        ]));
+      key: _formKey,
+      child: Column(
+        children: <Widget>[
+          ListTile(
+            leading: Icon(Icons.person_outline),
+            title: TextFormField(
+              decoration: InputDecoration(
+                labelText: "First name",
+              ),
+            ),
+            trailing: Icon(Icons.keyboard_arrow_down),
+          ),
+        ],
+      ),
+    );
   }
 }
