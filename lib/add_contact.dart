@@ -61,6 +61,7 @@ class ContactSaveToContainer extends StatelessWidget {
     return Container(
       height: 50.0,
       color: Colors.grey[300],
+      padding: EdgeInsets.symmetric(horizontal: 12.0),
       child: Row(
         children: [
           Text("Save to"),
