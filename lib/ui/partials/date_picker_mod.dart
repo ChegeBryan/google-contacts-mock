@@ -14,7 +14,6 @@ class _MyDatePickerInputState extends State<MyDatePickerInput> {
     return TextFormField(
       onTap: () => _selectDate(context),
       controller: _controller,
-      initialValue: '23/04/1998',
       decoration: InputDecoration(
         icon: Icon(Icons.event),
         labelText: "Date",
