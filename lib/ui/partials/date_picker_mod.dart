@@ -7,11 +7,12 @@ class MyDatePickerInput extends StatefulWidget {
 
 class _MyDatePickerInputState extends State<MyDatePickerInput> {
   TextEditingController _controller;
+  DateTime _selectedDate = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      onTap: () {},
+      onTap: () => _selectDate(context),
       controller: _controller,
       initialValue: '23/04/1998',
       decoration: InputDecoration(
@@ -28,5 +29,14 @@ class _MyDatePickerInputState extends State<MyDatePickerInput> {
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  Future<Null> _selectDate(BuildContext context) async {
+    final DateTime picked = await showDatePicker(
+      context: context,
+      initialDate: _selectedDate,
+      firstDate: DateTime(1900),
+      lastDate: DateTime(2100),
+    );
   }
 }
