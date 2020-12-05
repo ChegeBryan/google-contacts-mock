@@ -50,6 +50,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             padding: EdgeInsets.only(right: 40.0, top: 16.0),
             child: ListTile(
               title: TextFormField(
+                keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
                   icon: Icon(Icons.call_outlined),
                   labelText: "Phone",
