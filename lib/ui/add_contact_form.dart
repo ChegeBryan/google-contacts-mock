@@ -74,7 +74,21 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
           ),
           Visibility(
             child: Column(
-              children: [],
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
+                  child: ListTile(
+                    title: TextFormField(
+                      keyboardType: TextInputType.streetAddress,
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.place_outlined),
+                        labelText: "Address",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           )
         ],
