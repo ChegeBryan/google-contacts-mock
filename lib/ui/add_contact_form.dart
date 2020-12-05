@@ -149,6 +149,9 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   padding: EdgeInsets.only(right: 40.0, top: 16.0),
                   child: ListTile(
                     title: TextFormField(
+                      minLines: null,
+                      maxLines: null,
+                      expands: true,
                       decoration: InputDecoration(
                         icon: Icon(Icons.notes),
                         labelText: "Notes",
