@@ -37,5 +37,12 @@ class _MyDatePickerInputState extends State<MyDatePickerInput> {
       firstDate: DateTime(1900),
       lastDate: DateTime(2100),
     );
+
+    if (picked != null && picked != _selectedDate) {
+      setState(() {
+        _selectedDate = picked;
+        _controller.text = _selectedDate.toString();
+      });
+    }
   }
 }
