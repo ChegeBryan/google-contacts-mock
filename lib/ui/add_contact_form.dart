@@ -121,6 +121,18 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     title: MyDatePickerInput(),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
+                  child: ListTile(
+                    title: TextFormField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.group_work_outlined),
+                        labelText: "Relationship",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
