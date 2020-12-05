@@ -23,4 +23,10 @@ class _MyDatePickerInputState extends State<MyDatePickerInput> {
       readOnly: true,
     );
   }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 }
