@@ -133,6 +133,18 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
+                  child: ListTile(
+                    title: TextFormField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.dialer_sip_outlined),
+                        labelText: "SIP",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
