@@ -88,6 +88,19 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
+                  child: ListTile(
+                    title: TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.message_outlined),
+                        labelText: "IM",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
