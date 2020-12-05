@@ -66,7 +66,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
               title: TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                  icon: Icon(Icons.call_outlined),
+                  icon: Icon(Icons.email_outlined),
                   labelText: "Email",
                   border: OutlineInputBorder(),
                 ),
