@@ -72,6 +72,11 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
               ),
             ),
           ),
+          Visibility(
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
     );
