@@ -6,10 +6,13 @@ class MyDatePickerInput extends StatefulWidget {
 }
 
 class _MyDatePickerInputState extends State<MyDatePickerInput> {
+  TextEditingController _controller;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       onTap: () {},
+      controller: _controller,
       initialValue: '23/04/1998',
       decoration: InputDecoration(
         icon: Icon(Icons.event),
