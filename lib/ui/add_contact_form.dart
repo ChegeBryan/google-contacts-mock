@@ -160,6 +160,18 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
+                  child: ListTile(
+                    title: TextFormField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.label_outline),
+                        labelText: "Labels",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
