@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_contacts/ui/partials/date_picker_mod.dart';
 
 class AddContactFormFields extends StatefulWidget {
   @override
@@ -117,14 +118,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                 Padding(
                   padding: EdgeInsets.only(right: 40.0, top: 16.0),
                   child: ListTile(
-                    title: TextFormField(
-                      keyboardType: TextInputType.datetime,
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.event),
-                        labelText: "Date",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
+                    title: MyDatePickerInput(),
                   ),
                 ),
               ],
