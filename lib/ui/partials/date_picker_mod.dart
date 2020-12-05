@@ -17,6 +17,7 @@ class _MyDatePickerInputState extends State<MyDatePickerInput> {
         suffixIcon: Icon(Icons.keyboard_arrow_down),
         border: OutlineInputBorder(),
       ),
+      readOnly: true,
     );
   }
 }
