@@ -10,6 +10,8 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
   // This global key uniquely identifies the Form widget
   // and allows validation of the form.
   final _formKey = GlobalKey<FormState>();
+  bool extraFieldsVisible = false;
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -82,6 +84,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             ),
           ),
           Visibility(
+            visible: extraFieldsVisible,
             child: Column(
               children: [
                 Padding(
