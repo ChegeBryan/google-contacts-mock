@@ -15,6 +15,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
 
   void showExtraFormFields() {
     setState(() {
+      moreOptionsButtonBVisible = false;
       extraFieldsVisible = true;
     });
   }
