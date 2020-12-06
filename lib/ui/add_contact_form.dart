@@ -199,4 +199,22 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
       ),
     );
   }
+
+  Padding _buildTextFormField(
+    IconData icon,
+    String label,
+  ) {
+    return Padding(
+      padding: EdgeInsets.only(right: 40.0, top: 16.0),
+      child: ListTile(
+        title: TextFormField(
+          decoration: InputDecoration(
+            icon: Icon(icon),
+            labelText: label,
+            border: OutlineInputBorder(),
+          ),
+        ),
+      ),
+    );
+  }
 }
