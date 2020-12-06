@@ -12,6 +12,12 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
   final _formKey = GlobalKey<FormState>();
   bool extraFieldsVisible = false;
 
+  void showExtraFormFields() {
+    setState(() {
+      extraFieldsVisible = true;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Form(
