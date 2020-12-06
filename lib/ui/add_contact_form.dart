@@ -11,6 +11,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
   // and allows validation of the form.
   final _formKey = GlobalKey<FormState>();
   bool extraFieldsVisible = false;
+  bool moreOptionsButtonBVisible = true;
 
   void showExtraFormFields() {
     setState(() {
@@ -82,11 +83,14 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 50.0, top: 16.0),
-            child: TextButton(
-              onPressed: showExtraFormFields,
-              child: Text("More options"),
+          Visibility(
+            visible: moreOptionsButtonBVisible,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 50.0, top: 16.0),
+              child: TextButton(
+                onPressed: showExtraFormFields,
+                child: Text("More options"),
+              ),
             ),
           ),
           Visibility(
