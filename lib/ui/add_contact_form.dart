@@ -74,6 +74,13 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 50.0, top: 16.0),
+            child: TextButton(
+              onPressed: () {},
+              child: Text("More options"),
+            ),
+          ),
           Visibility(
             child: Column(
               children: [
