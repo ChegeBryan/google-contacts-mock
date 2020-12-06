@@ -15,6 +15,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
     return Form(
       key: _formKey,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           ListTile(
             title: TextFormField(
