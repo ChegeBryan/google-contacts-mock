@@ -98,7 +98,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   ),
                 ),
                 const CustomTextFormField(
-                  icon: Icons.group_outlined,
+                  icon: Icons.group_work_outlined,
                   labelText: "Relationship",
                 ),
                 const CustomTextFormField(
