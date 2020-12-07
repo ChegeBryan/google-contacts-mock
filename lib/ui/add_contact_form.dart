@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_contacts/ui/partials/date_picker_mod.dart';
 
+import 'partials/custom_dropdown_form_field.dart';
 import 'partials/custom_text_form_fields.dart';
 
 class AddContactFormFields extends StatefulWidget {
@@ -58,17 +59,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             labelText: "Phone",
             keyboardInputType: TextInputType.phone,
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 56.0, top: 8.0, right: 130.0),
-            child: DropdownButtonFormField(
-              decoration: InputDecoration(
-                labelText: "Label",
-                floatingLabelBehavior: FloatingLabelBehavior.always,
-                isDense: true,
-                border: OutlineInputBorder(),
-              ),
-            ),
-          ),
+          CustomButtonFormField(),
           const CustomTextFormField(
             icon: Icons.email_outlined,
             labelText: "Email",
