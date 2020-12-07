@@ -119,6 +119,9 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   icon: Icons.group_work_outlined,
                   labelText: "Relationship",
                 ),
+                CustomDropdownFormField(
+                  listFor: relationshipLabels,
+                ),
                 const CustomTextFormField(
                   icon: Icons.dialer_sip_outlined,
                   labelText: "SIP",
