@@ -4,11 +4,13 @@ class CustomTextFormField extends StatelessWidget {
   final IconData icon;
   final String labelText;
   final TextInputType keyboardInputType;
+  final int maxLines;
 
   const CustomTextFormField({
     this.keyboardInputType = TextInputType.text,
     this.labelText,
     this.icon,
+    this.maxLines,
     Key key,
   }) : super(key: key);
 
@@ -19,6 +21,7 @@ class CustomTextFormField extends StatelessWidget {
       child: ListTile(
         title: TextFormField(
           keyboardType: keyboardInputType,
+          maxLines: maxLines,
           decoration: InputDecoration(
             icon: Icon(icon),
             labelText: labelText,
