@@ -107,11 +107,6 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   keyboardInputType: TextInputType.emailAddress,
                 ),
                 const CustomTextFormField(
-                  icon: Icons.dialer_sip_outlined,
-                  labelText: "SIP",
-                  keyboardInputType: TextInputType.emailAddress,
-                ),
-                const CustomTextFormField(
                   icon: Icons.notes,
                   labelText: "Notes",
                   maxLines: null,
