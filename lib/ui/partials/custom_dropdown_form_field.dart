@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CustomDropdownFormField extends StatefulWidget {
+  final List listFor;
+
+  const CustomDropdownFormField({
+    @required this.listFor,
+    Key key,
+  })  : assert(listFor != null),
+        super(key: key);
+
   @override
   _CustomDropdownFormFieldState createState() =>
       _CustomDropdownFormFieldState();
@@ -15,11 +23,7 @@ class _CustomDropdownFormFieldState extends State<CustomDropdownFormField> {
       padding: EdgeInsets.only(left: 56.0, top: 8.0, right: 130.0),
       child: DropdownButtonFormField(
         value: _dropdownValue,
-        items: [
-          DropdownMenuItem(child: Text("Mobile"), value: 1),
-          DropdownMenuItem(child: Text("Home"), value: 2),
-          DropdownMenuItem(child: Text("Work"), value: 3),
-        ],
+        items: widget.listFor,
         onChanged: (value) {
           setState(() {
             _dropdownValue = value;
