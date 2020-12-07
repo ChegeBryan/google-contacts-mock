@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_contacts/ui/partials/date_picker_mod.dart';
+
+import 'partials/custom_text_form_fields.dart';
 
 class AddContactFormFields extends StatefulWidget {
   @override
@@ -46,43 +49,19 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 40.0, top: 16.0),
-            child: ListTile(
-              title: TextFormField(
-                decoration: InputDecoration(
-                  icon: Icon(Icons.domain),
-                  labelText: "Company",
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
+          const CustomTextFormField(
+            icon: Icons.domain,
+            labelText: "Company",
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 40.0, top: 16.0),
-            child: ListTile(
-              title: TextFormField(
-                keyboardType: TextInputType.phone,
-                decoration: InputDecoration(
-                  icon: Icon(Icons.call_outlined),
-                  labelText: "Phone",
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
+          const CustomTextFormField(
+            icon: Icons.dialer_sip_outlined,
+            labelText: "Phone",
+            keyboardInputType: TextInputType.phone,
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 40.0, top: 16.0),
-            child: ListTile(
-              title: TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  icon: Icon(Icons.email_outlined),
-                  labelText: "Email",
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
+          const CustomTextFormField(
+            icon: Icons.email_outlined,
+            labelText: "Email",
+            keyboardInputType: TextInputType.emailAddress,
           ),
           Visibility(
             visible: moreOptionsButtonBVisible,
@@ -98,63 +77,39 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             visible: extraFieldsVisible,
             child: Column(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      keyboardType: TextInputType.streetAddress,
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.place_outlined),
-                        labelText: "Address",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
+                const CustomTextFormField(
+                  icon: Icons.place_outlined,
+                  labelText: "Address",
+                  keyboardInputType: TextInputType.streetAddress,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.message_outlined),
-                        labelText: "IM",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
+                const CustomTextFormField(
+                  icon: Icons.message_outlined,
+                  labelText: "IN",
+                  keyboardInputType: TextInputType.emailAddress,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      keyboardType: TextInputType.url,
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.public),
-                        labelText: "Website",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
-                ),
+                const CustomTextFormField(
+                    icon: Icons.public,
+                    labelText: "Website",
+                    keyboardInputType: TextInputType.url),
                 Padding(
                   padding: EdgeInsets.only(right: 40.0, top: 16.0),
                   child: ListTile(
                     title: MyDatePickerInput(),
                   ),
                 ),
-                CustomTextFormField(),
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.dialer_sip_outlined),
-                        labelText: "SIP",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
+                const CustomTextFormField(
+                  icon: Icons.group_outlined,
+                  labelText: "Relationship",
+                ),
+                const CustomTextFormField(
+                  icon: Icons.dialer_sip_outlined,
+                  labelText: "SIP",
+                  keyboardInputType: TextInputType.emailAddress,
+                ),
+                const CustomTextFormField(
+                  icon: Icons.dialer_sip_outlined,
+                  labelText: "SIP",
+                  keyboardInputType: TextInputType.emailAddress,
                 ),
                 Padding(
                   padding: EdgeInsets.only(right: 40.0, top: 16.0),
