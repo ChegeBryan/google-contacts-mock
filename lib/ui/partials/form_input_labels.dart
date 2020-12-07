@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const List phoneLabels = [
+const List phoneLabels = <DropdownMenuItem>[
   DropdownMenuItem(child: Text("Mobile"), value: 1),
   DropdownMenuItem(child: Text("Home"), value: 2),
   DropdownMenuItem(child: Text("Work"), value: 3),

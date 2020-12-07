@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomDropdownFormField extends StatefulWidget {
-  final List listFor;
+  final List<DropdownMenuItem> listFor;
 
   const CustomDropdownFormField({
     @required this.listFor,
