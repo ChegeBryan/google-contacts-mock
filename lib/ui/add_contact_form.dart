@@ -5,11 +5,7 @@ import 'package:google_contacts/ui/partials/date_picker_mod.dart';
 import 'partials/custom_dropdown_form_field.dart';
 import 'partials/custom_text_form_fields.dart';
 
-const List phoneLabels = [
-  DropdownMenuItem(child: Text("Mobile"), value: 1),
-  DropdownMenuItem(child: Text("Home"), value: 2),
-  DropdownMenuItem(child: Text("Work"), value: 3),
-];
+import 'partials/form_input_labels.dart';
 
 class AddContactFormFields extends StatefulWidget {
   @override
