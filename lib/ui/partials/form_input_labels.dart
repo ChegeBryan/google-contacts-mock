@@ -11,3 +11,5 @@ const List emailLabels = <DropdownMenuItem>[
   DropdownMenuItem(child: Text("Work"), value: 2),
   DropdownMenuItem(child: Text("Other"), value: 3),
 ];
+
+const List addressLabels = emailLabels;

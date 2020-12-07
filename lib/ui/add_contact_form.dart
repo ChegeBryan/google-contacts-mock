@@ -91,6 +91,9 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   labelText: "Address",
                   keyboardInputType: TextInputType.streetAddress,
                 ),
+                CustomDropdownFormField(
+                  listFor: addressLabels,
+                ),
                 const CustomTextFormField(
                   icon: Icons.message_outlined,
                   labelText: "IN",
