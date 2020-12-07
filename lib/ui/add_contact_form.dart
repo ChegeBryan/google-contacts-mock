@@ -5,6 +5,12 @@ import 'package:google_contacts/ui/partials/date_picker_mod.dart';
 import 'partials/custom_dropdown_form_field.dart';
 import 'partials/custom_text_form_fields.dart';
 
+const List phoneLabels = [
+  DropdownMenuItem(child: Text("Mobile"), value: 1),
+  DropdownMenuItem(child: Text("Home"), value: 2),
+  DropdownMenuItem(child: Text("Work"), value: 3),
+];
+
 class AddContactFormFields extends StatefulWidget {
   @override
   _AddContactFormFieldsState createState() => _AddContactFormFieldsState();
@@ -59,7 +65,9 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             labelText: "Phone",
             keyboardInputType: TextInputType.phone,
           ),
-          CustomDropdownFormField(),
+          CustomDropdownFormField(
+            listFor: phoneLabels,
+          ),
           const CustomTextFormField(
             icon: Icons.email_outlined,
             labelText: "Email",
