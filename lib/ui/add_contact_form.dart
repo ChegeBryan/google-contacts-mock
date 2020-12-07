@@ -59,7 +59,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             labelText: "Phone",
             keyboardInputType: TextInputType.phone,
           ),
-          CustomButtonFormField(),
+          CustomDropdownFormField(),
           const CustomTextFormField(
             icon: Icons.email_outlined,
             labelText: "Email",
