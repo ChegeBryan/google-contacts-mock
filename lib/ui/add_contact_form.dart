@@ -143,18 +143,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     title: MyDatePickerInput(),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.group_work_outlined),
-                        labelText: "Relationship",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
-                ),
+                CustomTextFormField(),
                 Padding(
                   padding: EdgeInsets.only(right: 40.0, top: 16.0),
                   child: ListTile(
@@ -180,40 +169,10 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.label_outline),
-                        labelText: "Labels",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
-                ),
               ],
             ),
           )
         ],
-      ),
-    );
-  }
-
-  Padding _buildTextFormField(
-    IconData icon,
-    String label,
-  ) {
-    return Padding(
-      padding: EdgeInsets.only(right: 40.0, top: 16.0),
-      child: ListTile(
-        title: TextFormField(
-          decoration: InputDecoration(
-            icon: Icon(icon),
-            labelText: label,
-            border: OutlineInputBorder(),
-          ),
-        ),
       ),
     );
   }
