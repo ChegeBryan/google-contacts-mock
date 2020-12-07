@@ -41,7 +41,10 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                 border: OutlineInputBorder(),
               ),
             ),
-            trailing: Icon(Icons.keyboard_arrow_down),
+            trailing: IconButton(
+              icon: Icon(Icons.keyboard_arrow_down),
+              onPressed: () {},
+            ),
           ),
           Padding(
             padding: EdgeInsets.only(left: 56.0, right: 56.0, top: 8.0),
