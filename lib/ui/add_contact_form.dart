@@ -112,6 +112,9 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                     title: MyDatePickerInput(),
                   ),
                 ),
+                CustomDropdownFormField(
+                  listFor: dateLabels,
+                ),
                 const CustomTextFormField(
                   icon: Icons.group_work_outlined,
                   labelText: "Relationship",

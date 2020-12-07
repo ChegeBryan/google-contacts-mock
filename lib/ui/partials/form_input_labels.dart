@@ -24,3 +24,9 @@ const List imLabels = <DropdownMenuItem>[
   DropdownMenuItem(child: Text("ICQ"), value: 7),
   DropdownMenuItem(child: Text("Jabber"), value: 8),
 ];
+
+const List dateLabels = <DropdownMenuItem>[
+  DropdownMenuItem(child: Text("Birthday"), value: 1),
+  DropdownMenuItem(child: Text("Anniversary"), value: 2),
+  DropdownMenuItem(child: Text("Other"), value: 3),
+];
