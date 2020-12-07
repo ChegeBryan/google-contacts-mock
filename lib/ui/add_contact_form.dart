@@ -111,18 +111,10 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   labelText: "SIP",
                   keyboardInputType: TextInputType.emailAddress,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 40.0, top: 16.0),
-                  child: ListTile(
-                    title: TextFormField(
-                      maxLines: null,
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.notes),
-                        labelText: "Notes",
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                  ),
+                const CustomTextFormField(
+                  icon: Icons.notes,
+                  labelText: "Notes",
+                  maxLines: null,
                 ),
               ],
             ),
