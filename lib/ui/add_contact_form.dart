@@ -58,6 +58,17 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             labelText: "Phone",
             keyboardInputType: TextInputType.phone,
           ),
+          Padding(
+            padding: EdgeInsets.only(left: 56.0, top: 8.0, right: 130.0),
+            child: DropdownButtonFormField(
+              decoration: InputDecoration(
+                labelText: "Label",
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                isDense: true,
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ),
           const CustomTextFormField(
             icon: Icons.email_outlined,
             labelText: "Email",
