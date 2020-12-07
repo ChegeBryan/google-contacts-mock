@@ -69,6 +69,9 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
             labelText: "Email",
             keyboardInputType: TextInputType.emailAddress,
           ),
+          CustomDropdownFormField(
+            listFor: emailLabels,
+          ),
           Visibility(
             visible: moreOptionsButtonBVisible,
             child: Padding(
