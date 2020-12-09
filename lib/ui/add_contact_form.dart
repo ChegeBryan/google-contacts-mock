@@ -42,6 +42,32 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
     });
   }
 
+  Future<void> _imageSourceOptions() async {
+    switch (await showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return SimpleDialog(
+            title: const Text('Change Photo'),
+            children: <Widget>[
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text('Remove photo'),
+              ),
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text('Take new photo'),
+              ),
+              SimpleDialogOption(
+                onPressed: () {},
+                child: const Text('Select new photo'),
+              ),
+            ],
+          );
+        })) {
+      // Code to run when an option is selected
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -57,7 +83,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                 child: CircleAvatar(
                   child: IconButton(
                     icon: Icon(Icons.add_a_photo_outlined),
-                    onPressed: () {},
+                    onPressed: _imageSourceOptions,
                   ),
                   radius: 40.0,
                 ),
