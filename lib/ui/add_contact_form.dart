@@ -27,6 +27,13 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
     });
   }
 
+  void nameFieldsVibilityController() {
+    setState(() {
+      // hide minimal fields
+      minimalNameFieldsVibisle = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -48,7 +55,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   ),
                   trailing: IconButton(
                     icon: Icon(Icons.keyboard_arrow_down),
-                    onPressed: () {},
+                    onPressed: nameFieldsVibilityController,
                   ),
                 ),
                 Padding(
