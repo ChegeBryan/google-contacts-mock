@@ -18,6 +18,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
   final _formKey = GlobalKey<FormState>();
   bool extraFieldsVisible = false;
   bool moreOptionsButtonBVisible = true;
+  bool minimalNameFieldsVibisle = true;
 
   void showExtraFormFields() {
     setState(() {
@@ -33,26 +34,33 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          ListTile(
-            title: TextFormField(
-              decoration: InputDecoration(
-                icon: Icon(Icons.person_outline),
-                labelText: "First name",
-                border: OutlineInputBorder(),
-              ),
-            ),
-            trailing: IconButton(
-              icon: Icon(Icons.keyboard_arrow_down),
-              onPressed: () {},
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 56.0, right: 56.0, top: 8.0),
-            child: TextFormField(
-              decoration: InputDecoration(
-                labelText: "Last name",
-                border: OutlineInputBorder(),
-              ),
+          Visibility(
+            visible: minimalNameFieldsVibisle,
+            child: Column(
+              children: [
+                ListTile(
+                  title: TextFormField(
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.person_outline),
+                      labelText: "First name",
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  trailing: IconButton(
+                    icon: Icon(Icons.keyboard_arrow_down),
+                    onPressed: () {},
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 56.0, right: 56.0, top: 8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      labelText: "Last name",
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           const CustomTextFormField(
