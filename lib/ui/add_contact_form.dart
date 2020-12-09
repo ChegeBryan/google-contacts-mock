@@ -49,6 +49,21 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          Container(
+            height: 120,
+            child: FractionallySizedBox(
+              heightFactor: 0.5,
+              child: Center(
+                child: CircleAvatar(
+                  child: IconButton(
+                    icon: Icon(Icons.add_a_photo_outlined),
+                    onPressed: () {},
+                  ),
+                  radius: 40.0,
+                ),
+              ),
+            ),
+          ),
           Visibility(
             visible: minimalNameFieldsVibisle,
             child: Column(
