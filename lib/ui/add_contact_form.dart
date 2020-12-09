@@ -95,7 +95,10 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   ),
                   trailing: IconButton(
                     icon: Icon(Icons.keyboard_arrow_up),
-                    onPressed: () {},
+                    onPressed: () {
+                      nameFieldsVibilityController(
+                          minimalVisible: true, allVisible: false);
+                    },
                   ),
                 ),
                 Padding(
