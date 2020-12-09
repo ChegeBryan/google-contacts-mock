@@ -52,14 +52,20 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
               SimpleDialogOption(
                 onPressed: () {},
                 child: const Text('Remove photo'),
+                padding:
+                    const EdgeInsets.only(top: 16.0, bottom: 16.0, left: 24.0),
               ),
               SimpleDialogOption(
                 onPressed: () {},
                 child: const Text('Take new photo'),
+                padding:
+                    const EdgeInsets.only(top: 16.0, bottom: 16.0, left: 24.0),
               ),
               SimpleDialogOption(
                 onPressed: () {},
                 child: const Text('Select new photo'),
+                padding:
+                    const EdgeInsets.only(top: 16.0, bottom: 16.0, left: 24.0),
               ),
             ],
           );
