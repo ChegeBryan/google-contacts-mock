@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_contacts/ui/partials/date_picker_mod.dart';
@@ -28,10 +30,15 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
     });
   }
 
-  void nameFieldsVibilityController() {
+  // toogle visibility of the various names fields
+  void nameFieldsVibilityController(
+      {@required bool minimalVisible, @required bool allVisible}) {
     setState(() {
-      // hide minimal fields
-      minimalNameFieldsVibisle = false;
+      // controll minimal fields visibility
+      minimalNameFieldsVibisle = minimalVisible;
+
+      // control all names fields visibility
+      allNameFieldsVisible = allVisible;
     });
   }
 
@@ -56,7 +63,7 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                   ),
                   trailing: IconButton(
                     icon: Icon(Icons.keyboard_arrow_down),
-                    onPressed: nameFieldsVibilityController,
+                    onPressed: () {},
                   ),
                 ),
                 Padding(
