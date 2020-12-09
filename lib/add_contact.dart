@@ -6,6 +6,7 @@ class AddContact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: CloseButton(),
         title: Text(
           "Create contact",
           style: TextStyle(
