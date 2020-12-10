@@ -108,12 +108,15 @@ class _AddContactFormFieldsState extends State<AddContactFormFields> {
                       border: OutlineInputBorder(),
                     ),
                   ),
-                  trailing: IconButton(
-                    icon: Icon(Icons.keyboard_arrow_down),
-                    onPressed: () {
-                      nameFieldsVibilityController(
-                          minimalVisible: false, allVisible: true);
-                    },
+                  trailing: ConstrainedBox(
+                    constraints: BoxConstraints(maxWidth: 24.0),
+                    child: IconButton(
+                      icon: Icon(Icons.keyboard_arrow_down),
+                      onPressed: () {
+                        nameFieldsVibilityController(
+                            minimalVisible: false, allVisible: true);
+                      },
+                    ),
                   ),
                 ),
                 Padding(
